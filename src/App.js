@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Name } from './Name';
-
+import { Renderprop } from './Renderprop';
 //Render props
 
 export default function App() {
@@ -11,6 +11,8 @@ export default function App() {
       <p>Start editing to see some magic happen :)</p>
       {/* Render props */}
       <Name name={() => 'hello brother'} />
+
+      <Renderprop render={() => ''} />
     </div>
   );
 }
