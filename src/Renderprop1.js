@@ -1,9 +1,12 @@
 import React from 'react';
 
-export const Renderprop1 = (props) => {
+export const Renderprop1 = ({ count, clickHandler }) => {
   return (
     <>
-      <div>{props.render(count, clickHandler)}</div>
+      <div>
+        <p>{count}</p>
+        <button onClick={clickHandler}>Click me</button>
+      </div>
     </>
   );
 };
